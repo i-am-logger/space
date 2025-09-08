@@ -41,7 +41,11 @@
     "test:unit" = {
       exec = "cargo test --quiet";
     };
+
+    "test:bench" = {
+      exec = "cargo bench";
+    };
   };
 
-  enterTest = "devenv tasks run test:fmt test:clippy test:check test:unit";
+  enterTest = "devenv tasks run test:fmt test:clippy test:check test:unit test:bench";
 }
